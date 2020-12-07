@@ -1,0 +1,89 @@
+ *::before, ::after {
+    margin: 0;
+    padding: 0;
+   }
+ html { font-size: 62.5%;}
+ body { width: 100%;
+        height: 100%;
+        font-family: serif;
+        background: #dde1e7;
+        box-sizing: border-box;
+      }
+   .txt { text-align: center;
+        text-transform: capitalize;
+        color: #430bec;
+        font-size: 2.8rem;
+        letter-spacing: 0.5px;
+        margin: 3rem 0;
+       }
+    p { margin-left: 5px;
+        font-size: 1.7rem;
+        
+     }
+   h4 { font-size: 1.7rem;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+        
+       }
+.container { 
+            display: grid;
+            place-items: center;
+            margin-top: 5rem;
+            margin-bottom: 4rem;
+       }
+  .container img {
+             width: 300px;
+             height: 600px;
+            margin-left: -1rem;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.2);
+           }
+   .maker {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 105%;
+      height: 15rem;
+      background: #111;
+      margin: -1rem;
+     }
+  .maker h3 {
+       color: #fff;
+       text-transform:capitalize;
+       font-size: 1.8rem;
+       margin-bottom: -0.8rem;
+       }
+  .maker h2 {
+   color: #fff;
+   font-size: 2.3em;
+   text-transform: uppercase;
+   font-weight: 1000;
+   text-align: center;
+   position: relative;
+   letter-spacing: 1px;
+   margin: 1.8rem 0;
+   }
+  .maker h2::before {
+   content: '~MR.BARUN~';
+   width: 100%;
+   color: #2ed573;
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-right: 2px solid #2ed573;
+   animation: color 5s linear infinite;
+   overflow: hidden;
+   }
+   @keyframes color {
+   0% { width: 0%;
+   }
+   50% { width: 100%;
+   }
+   100% { width: 0%;
+   }
+   }
+   .maker:hover {
+    
+    }
+ /* fieldset { border: 1px solud black; }
+  legend { font-size: 2rem;} */
